@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:id="@+id/card_item">
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="12dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"/>
+
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icNama"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/menu"
+            />
+
+        <TextView
+            android:id="@+id/namaMenu"
+            android:text="Ayam Goreng"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@+id/icNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/icJumlah"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/icNama"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/coin"
+            />
+
+        <TextView
+            android:id="@+id/jumlah"
+            android:text="18"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@+id/icJumlah"
+            android:layout_below="@+id/namaMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/icStatus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/icJumlah"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/tentang"
+            />
+
+        <TextView
+            android:id="@+id/status"
+            android:text="Menunggu"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@+id/icJumlah"
+            android:layout_below="@+id/jumlah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19.5dp"
+            android:layout_marginLeft="10dp"/>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
